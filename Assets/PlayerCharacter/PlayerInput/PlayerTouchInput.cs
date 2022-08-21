@@ -7,14 +7,27 @@ public class PlayerTouchInput : MonoBehaviour
     private Vector2 touch_start_position;
     private float side_movement_speed = 0.2f;
 
-    // Update is called once per frame
+    public static float forward_movement_speed = 0.2f;
+
+
+    void Start() {
+        // Setting rigidbody rotation to none for testing
+        Rigidbody rb = gameObject.GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
+    }
+
     void Update() {
         if (Input.touchCount > 0) {
             Touch touch = Input.GetTouch(0);
 
-            // The buildings move start moving when clicked will be implemented here
+            // Player forward movement on touch
+            transform.position = new Vector3(
+                transform.position.x,
+                transform.position.y,
+                transform.position.z + forward_movement_speed
+            );
 
-            // Player side movement is implemented here
+            // Player side movement on drag
             if (touch.phase == TouchPhase.Began) {
                 touch_start_position = touch.position;
             }
