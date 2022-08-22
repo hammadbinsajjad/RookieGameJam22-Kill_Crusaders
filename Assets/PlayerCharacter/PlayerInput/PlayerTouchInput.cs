@@ -6,7 +6,7 @@ public class PlayerTouchInput : MonoBehaviour
 {
     private Vector2 touch_start_position;
 
-    private float side_movement_factor = 0.012f;
+    private float side_movement_factor = 0.01f;
 
     public static float forward_movement_speed = 0.2f;
 
