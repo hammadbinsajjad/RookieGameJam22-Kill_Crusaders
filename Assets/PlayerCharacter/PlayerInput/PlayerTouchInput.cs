@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerTouchInput : MonoBehaviour
 {
     private Vector2 touch_start_position;
-    private float side_movement_speed = 0.2f;
+
+    private float side_movement_factor = 0.012f;
 
     public static float forward_movement_speed = 0.2f;
 
@@ -36,22 +37,14 @@ public class PlayerTouchInput : MonoBehaviour
             float left_bound = Camera.main.rect.xMin - 1.9f;
 
             if (touch.phase == TouchPhase.Moved) {
-                if (touch.position.x > touch_start_position.x) {
-                    transform.position = new Vector3(
-                        Mathf.Clamp(transform.position.x + side_movement_speed, left_bound, right_bound), 
-                        transform.position.y, 
-                        transform.position.z
-                        );
-
-                }
-
-                else if (touch.position.x < touch_start_position.x) {
-                    transform.position = new Vector3(
-                        Mathf.Clamp(transform.position.x - side_movement_speed, left_bound, right_bound), 
-                        transform.position.y, 
-                        transform.position.z
-                        );
-                }
+                
+                float side_movement_speed = (touch.position.x - touch_start_position.x); 
+                side_movement_speed *= side_movement_factor;
+                transform.position = new Vector3(
+                    Mathf.Clamp(transform.position.x + side_movement_speed, left_bound, right_bound), 
+                    transform.position.y, 
+                    transform.position.z
+                    );
 
                 touch_start_position = touch.position;
             }
