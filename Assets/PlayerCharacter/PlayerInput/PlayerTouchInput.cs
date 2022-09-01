@@ -8,7 +8,7 @@ public class PlayerTouchInput : MonoBehaviour
 
     private float side_movement_factor = 0.01f;
 
-    public static float forward_movement_speed = 0.2f;
+    public static float forward_movement_speed = 0.3f;
 
 
     void Start() {
