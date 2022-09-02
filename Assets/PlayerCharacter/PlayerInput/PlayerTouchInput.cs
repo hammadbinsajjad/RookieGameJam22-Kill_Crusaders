@@ -20,15 +20,15 @@ public class PlayerTouchInput : MonoBehaviour
     }
 
     void Update() {
-        if (Input.touchCount > 0) {
-            Touch touch = Input.GetTouch(0);
-
-            // Player forward movement on touch
+            // Player forward movement
             transform.position = new Vector3(
                 transform.position.x,
                 transform.position.y,
                 transform.position.z + forward_movement_speed
             );
+
+        if (Input.touchCount > 0) {
+            Touch touch = Input.GetTouch(0);
 
             // Player side movement on drag
             if (touch.phase == TouchPhase.Began) {
