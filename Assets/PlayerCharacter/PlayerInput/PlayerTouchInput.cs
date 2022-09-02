@@ -8,11 +8,13 @@ public class PlayerTouchInput : MonoBehaviour
 
     private float side_movement_factor = 0.01f;
 
+    private float turn_angle = 70;
+
     public static float forward_movement_speed = 0.3f;
 
 
     void Start() {
-        // Setting rigidbody rotation to none for testing
+        // Freezinf rotation to only apply custom rotation
         Rigidbody rb = gameObject.GetComponent<Rigidbody>();
         rb.freezeRotation = true;
     }
@@ -46,9 +48,23 @@ public class PlayerTouchInput : MonoBehaviour
                     transform.position.z
                     );
 
+                // Perform rotation based on finger drag
+                if (side_movement_speed < 0 && (transform.rotation.y <= turn_angle && transform.rotation.y >= -turn_angle))
+                    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, -turn_angle, 0), Time.deltaTime*7f);
+                else if (side_movement_speed > 0 && (transform.rotation.y >= -turn_angle && transform.rotation.y <= turn_angle))
+                    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, turn_angle, 0), Time.deltaTime*7f);
+
                 touch_start_position = touch.position;
             }
+
+            // Reset the rotation if not dragging
+            if (touch.phase == TouchPhase.Stationary) 
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.identity, Time.deltaTime*7);
+
         }
+        
+        // Reset rotation if not touching
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.identity, Time.deltaTime*7);
     }
 }
 
