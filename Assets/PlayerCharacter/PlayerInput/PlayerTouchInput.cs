@@ -20,6 +20,10 @@ public class PlayerTouchInput : MonoBehaviour
     }
 
     void Update() {
+
+            // Disable player movement when level is finished
+            if (PassFinishLine.level_finished) return;
+
             // Player forward movement
             transform.position = new Vector3(
                 transform.position.x,

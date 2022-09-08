@@ -1622,8 +1622,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Finish Line
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e768fde10d2d5c14f89310be562f7a0e, type: 3}
+      propertyPath: m_TagString
+      value: finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e768fde10d2d5c14f89310be562f7a0e, type: 3}
+--- !u!1 &3594614019194319665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e768fde10d2d5c14f89310be562f7a0e, type: 3}
+  m_PrefabInstance: {fileID: 4405588843625598560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &112850146982093451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3594614019194319665}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 120.97134, y: 27.585278, z: 31.721119}
+  m_Center: {x: 0.000007975476, y: -0.33540386, z: 13.51555}
 --- !u!4 &4227035943011821963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e768fde10d2d5c14f89310be562f7a0e, type: 3}
