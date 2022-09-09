@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3806598918585422652, guid: 1c2abd71b8b23350a86191cf86caa504, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.059
+      objectReference: {fileID: 0}
     - target: {fileID: 5784386121812844593, guid: 1c2abd71b8b23350a86191cf86caa504, type: 3}
       propertyPath: m_Name
       value: Level2Structure
@@ -351,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1527410052611351306, guid: 114d54f354d1d5557a44e75be8e2de5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5103486
+      value: -2.13
       objectReference: {fileID: 0}
     - target: {fileID: 1527410052611351306, guid: 114d54f354d1d5557a44e75be8e2de5d, type: 3}
       propertyPath: m_LocalPosition.z

@@ -17,6 +17,8 @@ public class PlayerTouchInput : MonoBehaviour
         // Freezinf rotation to only apply custom rotation
         Rigidbody rb = gameObject.GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        PassFinishLine.level_finished = false;
+        Physics.gravity = new Vector3(0, -20, 0);
     }
 
     void Update() {
@@ -39,8 +41,8 @@ public class PlayerTouchInput : MonoBehaviour
                 touch_start_position = touch.position;
             }
 
-            float right_bound = Camera.main.rect.xMax + 1.8f;
-            float left_bound = Camera.main.rect.xMin - 1.9f;
+            float right_bound = Camera.main.rect.xMax + 1.9f;
+            float left_bound = Camera.main.rect.xMin - 2.2f;
 
             if (touch.phase == TouchPhase.Moved) {
                 
