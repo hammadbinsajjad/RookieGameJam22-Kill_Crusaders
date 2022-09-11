@@ -8,7 +8,7 @@ public class KiteCollection : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("kite")) {
             kites_count++;
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
             Debug.Log(kites_count);
         }
     }

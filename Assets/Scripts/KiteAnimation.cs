@@ -6,14 +6,23 @@ using DG.Tweening;
 public class KiteAnimation : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private  Vector3 start_pont;
-    [SerializeField] private Vector3 end_point;
+    public Vector3 start_pont;
+    public Vector3 end_pont;
     [SerializeField] private float fall_time = 9;
     [SerializeField] private int curves = 5;
     [SerializeField] private float amplitude = 0.5f;
 
 
-    void Start() {
+    //To update values through the kite spwaner script.
+    public void updateValues(Vector3 start, Vector3 end, float fall)
+    {
+        start_pont = start;
+        end_pont = end;
+        fall_time = fall;
+    }
+
+
+    public void Start() {
         
         curves += 2;
 
@@ -23,7 +32,7 @@ public class KiteAnimation : MonoBehaviour
 
 
         // Set points for the animation
-        float distance = end_point.y - start_pont.y;
+        float distance = end_pont.y - start_pont.y;
 
         float interval = distance / (curves - 1);
 
@@ -45,7 +54,7 @@ public class KiteAnimation : MonoBehaviour
             points[i] = inter_pos;
         }
 
-        points[points.Length - 1] = end_point;
+        points[points.Length - 1] = end_pont;
 
         // Perform the animation on the points
         Sequence seq = DOTween.Sequence();
@@ -54,4 +63,6 @@ public class KiteAnimation : MonoBehaviour
             transform?.DOPath(points, fall_time, PathType.CatmullRom)
         );
     }
+
+   
 }
