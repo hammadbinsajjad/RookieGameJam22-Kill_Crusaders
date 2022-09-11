@@ -14,10 +14,11 @@ public class KiteAnimation : MonoBehaviour
 
 
     //To update values through the kite spwaner script.
-    public void updateValues(Vector3 start, Vector3 end)
+    public void updateValues(Vector3 start, Vector3 end, float fall)
     {
         start_pont = start;
         end_pont = end;
+        fall_time = fall;
     }
 
 

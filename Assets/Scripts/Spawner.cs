@@ -44,6 +44,7 @@ public class Spawner : MonoBehaviour
     public GameObject objectToSpawn;
     public  Vector3 start_point;
     public Vector3 end_point;
+    public int fall;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +55,7 @@ public class Spawner : MonoBehaviour
     public void SpawnObject()
     {
         animation = objectToSpawn.GetComponent<KiteAnimation>();
-        animation.updateValues( start_point,  end_point);
+        animation.updateValues( start_point,  end_point, fall);
         Instantiate(objectToSpawn);
        
     }

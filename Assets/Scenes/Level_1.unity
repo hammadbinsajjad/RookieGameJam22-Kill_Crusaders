@@ -342,7 +342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603331991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.01, y: -11.27, z: 22}
+  m_LocalPosition: {x: 5.01, y: -11.27, z: 0}
   m_LocalScale: {x: 0.9363, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -423,6 +423,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: 0.7, y: 1, z: 120}
   end_point: {x: 0.7, y: -3.5, z: 120}
+  fall: 4
 --- !u!1 &647416909
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,8 +469,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
-  start_point: {x: 2.42, y: 0, z: 62}
+  start_point: {x: 2.42, y: 6, z: 62}
   end_point: {x: 2.42, y: -3, z: 62}
+  fall: 6
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +774,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: -0.04, y: -0.5, z: 20}
   end_point: {x: -0.04, y: -3.3, z: 20}
+  fall: 4
 --- !u!1 &1612465869
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3570428607726915481, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31
+      value: 6.45
       objectReference: {fileID: 0}
     - target: {fileID: 3570428607726915481, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
       propertyPath: m_LocalPosition.z
@@ -948,6 +951,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: -2.4, y: -0.2, z: 228}
   end_point: {x: -2.4, y: -3.4, z: 228}
+  fall: 4
 --- !u!1 &2084121324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1059,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: -2.04, y: 1.5, z: 92}
   end_point: {x: -2.04, y: -3.4, z: 92}
+  fall: 4
 --- !u!1001 &601499854165398900
 PrefabInstance:
   m_ObjectHideFlags: 0
