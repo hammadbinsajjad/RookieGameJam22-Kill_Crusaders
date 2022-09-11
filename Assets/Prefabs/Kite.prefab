@@ -144,9 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7991a4d99b4c5fa1e8a446b56ce3a4b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start_pont: {x: 2.1977, y: 2.7267, z: 13.277}
-  end_point: {x: 2.1977, y: -2.02, z: 13.277}
-  fall_time: 9
+  start_pont: {x: -0.7, y: 1.77, z: 14.13}
+  end_pont: {x: -0.7, y: -2.56, z: 14.13}
+  fall_time: 2
   curves: 5
   amplitude: 0.5
 --- !u!1 &4559388609757848238

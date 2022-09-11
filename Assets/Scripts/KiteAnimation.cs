@@ -6,22 +6,22 @@ using DG.Tweening;
 public class KiteAnimation : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] public  Vector3 start_pont;
-    [SerializeField] public Vector3 end_pont;
+    public Vector3 start_pont;
+    public Vector3 end_pont;
     [SerializeField] private float fall_time = 9;
     [SerializeField] private int curves = 5;
     [SerializeField] private float amplitude = 0.5f;
 
 
     //To update values through the kite spwaner script.
-    // void updateValues(Vector3 start, Vector3 end)
-    // {
-    //     start_pont = start;
-    //     end_pont = end;
-    // }
+    public void updateValues(Vector3 start, Vector3 end)
+    {
+        start_pont = start;
+        end_pont = end;
+    }
 
 
-    void Start() {
+    public void Start() {
         
         curves += 2;
 
