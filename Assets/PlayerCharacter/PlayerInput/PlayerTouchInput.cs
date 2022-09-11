@@ -18,7 +18,12 @@ public class PlayerTouchInput : MonoBehaviour
         Rigidbody rb = gameObject.GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         PassFinishLine.level_finished = false;
+
+        // Increasing gravity for player to fall down in gaps
         Physics.gravity = new Vector3(0, -20, 0);
+
+        // Reset kite collection points when new level starts
+        KiteCollection.kites_count = 0;
     }
 
     void Update() {

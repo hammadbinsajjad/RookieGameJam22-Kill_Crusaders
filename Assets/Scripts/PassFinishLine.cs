@@ -25,6 +25,6 @@ public class PassFinishLine : MonoBehaviour
     IEnumerator finish_level() {
         yield return new WaitForSeconds(5);
 
-        SceneManager.LoadScene("LevelSelection");
+        SceneManager.LoadScene("Congratulations");
     }
 }

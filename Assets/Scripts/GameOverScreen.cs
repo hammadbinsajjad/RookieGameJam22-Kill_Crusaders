@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadLevelScreen : MonoBehaviour
+public class GameOverScreen : MonoBehaviour
 {
-    // Update is called once per frame
     void Update()
     {
         if (transform.position.y < -5) 
-            SceneManager.LoadScene("LevelSelection");
+            SceneManager.LoadScene("Game Over");
     }
 }
