@@ -40,7 +40,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    private KiteAnimation animation;
+    private KiteAnimation kite_animation;
     public GameObject objectToSpawn;
     public  Vector3 start_point;
     public Vector3 end_point;
@@ -54,8 +54,8 @@ public class Spawner : MonoBehaviour
 
     public void SpawnObject()
     {
-        animation = objectToSpawn.GetComponent<KiteAnimation>();
-        animation.updateValues( start_point,  end_point, fall);
+        kite_animation = objectToSpawn.GetComponent<KiteAnimation>();
+        kite_animation.updateValues( start_point,  end_point, fall);
         Instantiate(objectToSpawn);
        
     }
