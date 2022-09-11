@@ -44,7 +44,6 @@ public class Spawner : MonoBehaviour
     public GameObject objectToSpawn;
     public  Vector3 start_point;
     public Vector3 end_point;
-    public int fall;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +53,7 @@ public class Spawner : MonoBehaviour
 
     public void SpawnObject()
     {
+        float fall = Mathf.Clamp(Mathf.Abs(0.05f * (end_point.y * start_point.y)), 2f, 5f); 
         kite_animation = objectToSpawn.GetComponent<KiteAnimation>();
         kite_animation.updateValues( start_point,  end_point, fall);
         Instantiate(objectToSpawn);
