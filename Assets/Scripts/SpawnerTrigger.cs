@@ -8,8 +8,11 @@ public class SpawnerTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+
+         Debug.Log("inside on trigger");
         if(other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("inside on trigger");
            spawner.SpawnObject();
         }
     }
