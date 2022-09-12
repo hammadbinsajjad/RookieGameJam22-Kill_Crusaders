@@ -10,6 +10,7 @@ public class KiteCollection : MonoBehaviour
             kites_count++;
             other.gameObject.SetActive(false);
             Debug.Log(kites_count);
+            GetComponent<AudioSource>().Play();
         }
     }
 }

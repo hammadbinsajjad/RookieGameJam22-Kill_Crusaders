@@ -6,6 +6,8 @@ TagManager:
   tags:
   - kite
   - finish
+  - pots
+  - player
   layers:
   - Default
   - TransparentFX
