@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4440219, g: 0.49316508, b: 0.5722314, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -845,7 +845,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: -1.6, y: 3.62, z: 20}
   end_point: {x: -1.6, y: -3.6, z: 20}
-  fall: 5
 --- !u!1 &909531885
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +892,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: 2, y: 12, z: 210}
   end_point: {x: 2, y: -3.6, z: 210}
-  fall: 9
 --- !u!1 &975561822
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,7 +939,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: -1.5, y: 1, z: 56}
   end_point: {x: -1.6, y: -3.4, z: 56}
-  fall: 6
 --- !u!1 &1078898466
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,7 +986,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: -3, y: 16, z: 235}
   end_point: {x: -3, y: -3.6, z: 235}
-  fall: 12
 --- !u!1 &1226337775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1033,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: -1, y: 11, z: 110}
   end_point: {x: -1, y: -3.6, z: 110}
-  fall: 7
 --- !u!1 &1248016809
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1093,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 1751602245}
+--- !u!1 &1342351163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342351165}
+  - component: {fileID: 1342351164}
+  m_Layer: 0
+  m_Name: KiteAnimationCleanUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1342351164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342351163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ddf9f59c9bc7d64a60a704d0e46d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1342351165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342351163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -28.136173, y: -32.43443, z: 189.54132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1411766750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,7 +1184,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: 1.64, y: 4, z: 45}
   end_point: {x: 1.64, y: -3.3, z: 45}
-  fall: 7
 --- !u!1 &1671779075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,7 +1231,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: 0, y: 12, z: 145}
   end_point: {x: 0, y: -3.5, z: 145}
-  fall: 7
 --- !u!1 &1712622276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,7 +1278,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: 2.4, y: 12, z: 90}
   end_point: {x: 2.4, y: -3.6, z: 90}
-  fall: 9
 --- !u!1 &1751602243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1325,6 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4235465344170644771, guid: bd5abd42a89ab06deb558c04e508b768, type: 3}
   start_point: {x: 3, y: 16, z: 176}
   end_point: {x: 3, y: -3.6, z: 176}
-  fall: 16
 --- !u!1 &1958132757
 GameObject:
   m_ObjectHideFlags: 0
