@@ -60,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527410053299171398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0127475, y: 2.5103486, z: -11.347322}
+  m_LocalPosition: {x: 1.0127475, y: 2.5103486, z: -11.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -396,6 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4924940111599320410}
+  main_camera: {fileID: 1527410053299171394}
 --- !u!95 &4924940111599320410 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: a71b0ec003a3cccdca886e6b3978ea95, type: 3}

@@ -9,12 +9,16 @@ public class PassFinishLine : MonoBehaviour
 
     [SerializeField] private Animator animator;
 
+    [SerializeField] private Camera main_camera;
+
     int level_finish_animation_index = Animator.StringToHash("LevelFinished");
 
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("finish")) {
 
             level_finished = true;
+
+            transform.LookAt(main_camera.transform);
 
             animator.SetTrigger(level_finish_animation_index);
 
